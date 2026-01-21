@@ -57,7 +57,6 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: backend-artifact
-          path: ./backend/ParkNDeploy.Api/publish
 
   deploy_infrastructure:
     runs-on: ubuntu-latest
