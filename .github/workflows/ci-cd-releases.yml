@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: frontend-artifact
-          path: ./frontend/dist
+          path: ./frontend
 
   build_dotnet_app_release_backend_job:
       runs-on: ubuntu-latest
@@ -57,6 +57,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: backend-artifact
+          path: ./backend
 
   deploy_infrastructure:
     runs-on: ubuntu-latest
